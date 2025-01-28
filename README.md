@@ -27,7 +27,6 @@ git clone https://your-repository-url.git
 cd your-repository-folder
 ```
 
----
 
 ---
 
