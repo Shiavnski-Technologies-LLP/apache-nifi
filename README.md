@@ -1,4 +1,4 @@
-# Apache NiFi with Docker Compose
+# Apache NiFi Tutorial with Docker Compose
 
 This project provides a Docker Compose configuration to quickly spin up an instance of Apache NiFi using Docker. The setup is designed to run Apache NiFi on `localhost` using the default ports.
 
