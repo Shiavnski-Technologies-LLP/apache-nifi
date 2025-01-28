@@ -23,7 +23,7 @@ Before you begin, ensure that you have the following installed:
 If you are working with a Git repository for your project, clone it to your local machine. Skip this step if you are setting up the project independently.
 
 ```bash
-git clone https://your-repository-url.git
+git clone https://github.com/Shiavnski-Technologies-LLP/apache-nifi.git
 cd your-repository-folder
 ```
 
