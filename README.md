@@ -24,7 +24,7 @@ If you are working with a Git repository for your project, clone it to your loca
 
 ```bash
 git clone https://github.com/Shiavnski-Technologies-LLP/apache-nifi.git
-cd your-repository-folder
+cd apache-nifi-main
 ```
 
 
