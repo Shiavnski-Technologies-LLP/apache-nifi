@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://nifi.apache.org/">
+    <name>CSV Column Capitalization Flow</name>
+    <description>NiFi flow to capitalize a column in a CSV file</description>
+    <processors>
+        <processor id="GetFile">
+            <name>GetFile</name>
+            <config>
+                <property>
+                    <name>Input Directory</name>
+                    <value>../data/input</value>
+                </property>
+                <property>
+                    <name>File Filter</name>
+                    <value>.*\.csv</value>
+                </property>
+            </config>
+        </processor>
+        
+        <processor id="ExecuteScript">
+            <name>ExecuteScript</name>
+            <config>
+                <property>
+                    <name>Script File</name>
+                    <value>../scripts/capitalize_column.py</value>
+                </property>
+                <property>
+                    <name>Script Engine</name>
+                    <value>Python</value>
+                </property>
+            </config>
+        </processor>
+        
+        <processor id="PutDatabaseRecord">
+            <name>PutDatabaseRecord</name>
+            <config>
+                <property>
+                    <name>Database Connection Pooling Service</name>
+                    <value>DBCPConnectionPool</value>
+                </property>
+                <property>
+                    <name>Table Name</name>
+                    <value>capitalized_data</value>
+                </property>
+            </config>
+        </processor>
+        
+        <processor id="LogMessage">
+            <name>LogMessage</name>
+            <config>
+                <property>
+                    <name>Log Level</name>
+                    <value>INFO</value>
+                </property>
+                <property>
+                    <name>Message</name>
+                    <value>CSV processing completed successfully!</value>
+                </property>
+            </config>
+        </processor>
+    </processors>
+</template>
