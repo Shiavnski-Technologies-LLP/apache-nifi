@@ -33,3 +33,8 @@ This project automates the process of capitalizing a specific column in a CSV fi
 ---
 
 💡 **Tip:** Make sure your database connection settings are correct before running the process. 🛠️🔥
+
+---
+
+📄 License 📝
+This project is licensed under the MIT License. See the LICENSE file for details.
