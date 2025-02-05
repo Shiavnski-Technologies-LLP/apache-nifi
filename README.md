@@ -1,5 +1,5 @@
 
-# **NiFi Data Processing 📝🔄
+## **NiFi Data Processing 📝🔄
 
 This project automates the process of capitalizing a specific column in a CSV file using **Apache NiFi** and a **Python script**. 🐍📊
 
